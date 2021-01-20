@@ -22,7 +22,7 @@ public class OrdaringDB {
 
         try {
             Class.forName ( "net.sourceforge.jtds.jdbc.Driver" );
-            connection = DriverManager.getConnection ( "jdbc:jtds:sqlserver://SQL6001.site4now.net/DB_A39573_onlineshoping", "DB_A39573_onlineshoping_admin", "adminordaring123" );
+            connection = DriverManager.getConnection ( "Sql Server Path", "Database Name", "Database Password" );
         } catch (SQLException se) {
             Log.e ( "Error Database 1 : ", se.getMessage () );
         } catch (ClassNotFoundException e) {
